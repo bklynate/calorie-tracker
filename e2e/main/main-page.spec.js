@@ -1,6 +1,6 @@
 'use strict';
 
-describe('LoginPage', function() {
+describe('MainPage', function() {
   var mainPage = require('./main-page.js');
   var mealCount = 0;
 

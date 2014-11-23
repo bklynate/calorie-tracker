@@ -10,6 +10,7 @@ var LoginPage = function() {
   this.passwordInput = element(by.name('password'));
   this.loginButton = element(by.css('.btn-login'));
   this.registerButton = element(by.css('.btn-register'));
+  this.helpBlock = element(by.css('.help-block'));
 };
 
 module.exports = new LoginPage();

@@ -33,22 +33,18 @@
       <th style="width:16%;"><i class="glyphicon glyphicon-cog"></i>  Actions</th>
     </tr>
     <tr ng-show="addingNew">
-    <!--  <form method="get" name="form1" action="" novalidate>
-        <fieldset>-->
-          <td><div ng-class="{'has-error': !newMeal.dateTime, 'has-success':newMeal.dateTime}"><input type="text" class="form-control" ng-model="newMeal.dateTime" autoclose="true" bs-datepicker required></div></td>
-          <td><div ng-class="{'has-error': !newMeal.dateTime, 'has-success':newMeal.dateTime}"><input type="text" class="form-control" ng-model="newMeal.dateTime" autoclose="true" bs-timepicker required></div></td>
-          <td><div ng-class="{'has-error': !newMeal.name, 'has-success':newMeal.name}"><input class="form-control" type="text" ng-model="newMeal.name"/></div></td>
-          <td><div ng-class="'has-success'"><input class="form-control" type="text" ng-model="newMeal.info"/></div></td>
-          <td><div ng-class="{'has-error': !newMeal.calories, 'has-success':newMeal.calories}"><input class="form-control" type="number" ng-model="newMeal.calories" required/></div></td>
-          <td><div><input class="form-control" type="number" ng-disabled="true"/></div></td>
-          <td>
-            <div class="btnContainter">
-              <button ng-disabled="!newMeal.dateTime || !newMeal.name || !newMeal.calories"  ng-click="addMeal()" class="btn btn-success"><i class="glyphicon glyphicon-ok">Save</i></button>
-              <button class="btn btn-danger" ng-click="addingNew=false;"><i class="glyphicon glyphicon-remove">Cancel</i></button>
-            </div>
-          </td>
-        <!--</fieldset>
-      </form>-->
+      <td><div ng-class="{'has-error': !newMeal.dateTime, 'has-success':newMeal.dateTime}"><input type="text" class="form-control" ng-model="newMeal.dateTime" autoclose="true" bs-datepicker required></div></td>
+      <td><div ng-class="{'has-error': !newMeal.dateTime, 'has-success':newMeal.dateTime}"><input type="text" class="form-control" ng-model="newMeal.dateTime" autoclose="true" bs-timepicker required></div></td>
+      <td><div ng-class="{'has-error': !newMeal.name, 'has-success':newMeal.name}"><input class="form-control" type="text" ng-model="newMeal.name"/></div></td>
+      <td><div ng-class="'has-success'"><input class="form-control" type="text" ng-model="newMeal.info"/></div></td>
+      <td><div ng-class="{'has-error': !newMeal.calories, 'has-success':newMeal.calories}"><input class="form-control" type="number" ng-model="newMeal.calories" required/></div></td>
+      <td><div><input class="form-control" type="number" ng-disabled="true"/></div></td>
+      <td>
+        <div class="btnContainter">
+          <button ng-disabled="!newMeal.dateTime || !newMeal.name || !newMeal.calories"  ng-click="addMeal()" class="btn btn-success"><i class="glyphicon glyphicon-ok">Save</i></button>
+          <button class="btn btn-danger" ng-click="addingNew=false;"><i class="glyphicon glyphicon-remove">Cancel</i></button>
+        </div>
+      </td>
     </tr>
     <tr ng-repeat="meal in meals | calorieFilter:filters">
       <td>
