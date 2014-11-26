@@ -66,4 +66,5 @@
 
 .btnContainter > * {
   width:48%;
+  min-width: 80px;
 }
